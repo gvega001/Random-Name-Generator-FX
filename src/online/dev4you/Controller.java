@@ -1,4 +1,5 @@
-package sample;
+package online.dev4you;
 
 public class Controller {
+
 }
