@@ -7,11 +7,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
+    NumberGenerator numberGenerator = new NumberGeneratorImpl();
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("online.dev4you.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("The next int is: "+ numberGenerator.next());
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
@@ -20,4 +20,6 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }
+
