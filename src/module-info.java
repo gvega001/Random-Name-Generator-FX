@@ -9,4 +9,6 @@ module Random.Name.Generator {
     requires javafx.fxml;
 
     opens online.dev4you;
+
+
 }
