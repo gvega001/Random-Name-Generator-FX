@@ -1,5 +1,21 @@
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
 <GridPane fx:controller="online.dev4you.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+    <Text text ="Welcome to FX Gabriel!"
+          GridPane.columnIndex ="0" GridPane.rowIndex ="0"
+          GridPane.columnSpan ="2"/>
+    <Label text="Please complete the follow form:"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"
+           GridPane.columnSpan="5"/>
+    <Button text="Submit"
+            GridPane.columnIndex="0" GridPane.rowIndex="2"
+            GridPane.columnSpan="5"/>
+    <userData></userData>
 </GridPane>
